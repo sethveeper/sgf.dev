@@ -1,0 +1,841 @@
+{
+  "generated": [
+    "app"
+  ],
+  "modules": {
+    "app": {
+      "rootPath": "app",
+      "remoteServiceName": "Default",
+      "controllers": {
+        "SgfDevs.Controllers.Groups.GroupController": {
+          "controllerName": "Group",
+          "type": "SgfDevs.Controllers.Groups.GroupController",
+          "interfaces": [
+            {
+              "type": "SgfDevs.Groups.IGroupAppService"
+            }
+          ],
+          "actions": {
+            "GetListAsyncByInput": {
+              "uniqueName": "GetListAsyncByInput",
+              "name": "GetListAsync",
+              "httpMethod": "GET",
+              "url": "api/app/groups",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "SgfDevs.Groups.GetGroupsInput, SgfDevs.Application.Contracts",
+                  "type": "SgfDevs.Groups.GetGroupsInput",
+                  "typeSimple": "SgfDevs.Groups.GetGroupsInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "FilterText",
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "Name",
+                  "type": "System.String?",
+                  "typeSimple": "string?",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "FacebookLink",
+                  "type": "System.String?",
+                  "typeSimple": "string?",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "TwitterLink",
+                  "type": "System.String?",
+                  "typeSimple": "string?",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "LinkedInLink",
+                  "type": "System.String?",
+                  "typeSimple": "string?",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "InstagramLink",
+                  "type": "System.String?",
+                  "typeSimple": "string?",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "YouTubeLink",
+                  "type": "System.String?",
+                  "typeSimple": "string?",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "TwitchLink",
+                  "type": "System.String?",
+                  "typeSimple": "string?",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "WebsiteLink",
+                  "type": "System.String?",
+                  "typeSimple": "string?",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "WebsiteTitle",
+                  "type": "System.String?",
+                  "typeSimple": "string?",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "LocationText",
+                  "type": "System.String?",
+                  "typeSimple": "string?",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "EstablishedDateText",
+                  "type": "System.String?",
+                  "typeSimple": "string?",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "Sorting",
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "SkipCount",
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "MaxResultCount",
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                }
+              ],
+              "returnValue": {
+                "type": "Volo.Abp.Application.Dtos.PagedResultDto<SgfDevs.Groups.GroupDto>",
+                "typeSimple": "Volo.Abp.Application.Dtos.PagedResultDto<SgfDevs.Groups.GroupDto>"
+              }
+            },
+            "GetAsyncById": {
+              "uniqueName": "GetAsyncById",
+              "name": "GetAsync",
+              "httpMethod": "GET",
+              "url": "api/app/groups/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "SgfDevs.Groups.GroupDto",
+                "typeSimple": "SgfDevs.Groups.GroupDto"
+              }
+            },
+            "CreateAsyncByInput": {
+              "uniqueName": "CreateAsyncByInput",
+              "name": "CreateAsync",
+              "httpMethod": "POST",
+              "url": "api/app/groups",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "SgfDevs.Groups.GroupCreateDto, SgfDevs.Application.Contracts",
+                  "type": "SgfDevs.Groups.GroupCreateDto",
+                  "typeSimple": "SgfDevs.Groups.GroupCreateDto",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "type": "SgfDevs.Groups.GroupCreateDto",
+                  "typeSimple": "SgfDevs.Groups.GroupCreateDto",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "SgfDevs.Groups.GroupDto",
+                "typeSimple": "SgfDevs.Groups.GroupDto"
+              }
+            },
+            "UpdateAsyncByIdAndInput": {
+              "uniqueName": "UpdateAsyncByIdAndInput",
+              "name": "UpdateAsync",
+              "httpMethod": "PUT",
+              "url": "api/app/groups/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                },
+                {
+                  "name": "input",
+                  "typeAsString": "SgfDevs.Groups.GroupUpdateDto, SgfDevs.Application.Contracts",
+                  "type": "SgfDevs.Groups.GroupUpdateDto",
+                  "typeSimple": "SgfDevs.Groups.GroupUpdateDto",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "type": "SgfDevs.Groups.GroupUpdateDto",
+                  "typeSimple": "SgfDevs.Groups.GroupUpdateDto",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "SgfDevs.Groups.GroupDto",
+                "typeSimple": "SgfDevs.Groups.GroupDto"
+              }
+            },
+            "DeleteAsyncById": {
+              "uniqueName": "DeleteAsyncById",
+              "name": "DeleteAsync",
+              "httpMethod": "DELETE",
+              "url": "api/app/groups/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "types": {
+    "SgfDevs.Shared.LookupRequestDto": {
+      "baseType": "Volo.Abp.Application.Dtos.PagedResultRequestDto",
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": null,
+      "properties": [
+        {
+          "name": "Filter",
+          "type": "System.String",
+          "typeSimple": "string"
+        }
+      ]
+    },
+    "SgfDevs.Shared.LookupDto<T0>": {
+      "baseType": null,
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": [
+        "T"
+      ],
+      "properties": [
+        {
+          "name": "Id",
+          "type": "T",
+          "typeSimple": "T"
+        },
+        {
+          "name": "DisplayName",
+          "type": "System.String",
+          "typeSimple": "string"
+        }
+      ]
+    },
+    "SgfDevs.Groups.GetGroupsInput": {
+      "baseType": "Volo.Abp.Application.Dtos.PagedAndSortedResultRequestDto",
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": null,
+      "properties": [
+        {
+          "name": "FilterText",
+          "type": "System.String",
+          "typeSimple": "string"
+        },
+        {
+          "name": "Name",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "FacebookLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "TwitterLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "LinkedInLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "InstagramLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "YouTubeLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "TwitchLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "WebsiteLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "WebsiteTitle",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "LocationText",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "EstablishedDateText",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        }
+      ]
+    },
+    "SgfDevs.Groups.GroupDto": {
+      "baseType": "Volo.Abp.Application.Dtos.FullAuditedEntityDto<System.Guid>",
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": null,
+      "properties": [
+        {
+          "name": "Name",
+          "type": "System.String",
+          "typeSimple": "string"
+        },
+        {
+          "name": "FacebookLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "TwitterLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "LinkedInLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "InstagramLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "YouTubeLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "TwitchLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "WebsiteLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "WebsiteTitle",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "LocationText",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "EstablishedDateText",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        }
+      ]
+    },
+    "SgfDevs.Groups.GroupCreateDto": {
+      "baseType": null,
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": null,
+      "properties": [
+        {
+          "name": "Name",
+          "type": "System.String",
+          "typeSimple": "string"
+        },
+        {
+          "name": "FacebookLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "TwitterLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "LinkedInLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "InstagramLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "YouTubeLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "TwitchLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "WebsiteLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "WebsiteTitle",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "LocationText",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "EstablishedDateText",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        }
+      ]
+    },
+    "SgfDevs.Groups.GroupUpdateDto": {
+      "baseType": null,
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": null,
+      "properties": [
+        {
+          "name": "Name",
+          "type": "System.String",
+          "typeSimple": "string"
+        },
+        {
+          "name": "FacebookLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "TwitterLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "LinkedInLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "InstagramLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "YouTubeLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "TwitchLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "WebsiteLink",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "WebsiteTitle",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "LocationText",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "EstablishedDateText",
+          "type": "System.String?",
+          "typeSimple": "string?"
+        }
+      ]
+    },
+    "Volo.Abp.Application.Dtos.PagedAndSortedResultRequestDto": {
+      "baseType": "Volo.Abp.Application.Dtos.PagedResultRequestDto",
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": null,
+      "properties": [
+        {
+          "name": "Sorting",
+          "type": "System.String",
+          "typeSimple": "string"
+        }
+      ]
+    },
+    "Volo.Abp.Application.Dtos.PagedResultRequestDto": {
+      "baseType": "Volo.Abp.Application.Dtos.LimitedResultRequestDto",
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": null,
+      "properties": [
+        {
+          "name": "SkipCount",
+          "type": "System.Int32",
+          "typeSimple": "number"
+        }
+      ]
+    },
+    "Volo.Abp.Application.Dtos.LimitedResultRequestDto": {
+      "baseType": null,
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": null,
+      "properties": [
+        {
+          "name": "DefaultMaxResultCount",
+          "type": "System.Int32",
+          "typeSimple": "number"
+        },
+        {
+          "name": "MaxMaxResultCount",
+          "type": "System.Int32",
+          "typeSimple": "number"
+        },
+        {
+          "name": "MaxResultCount",
+          "type": "System.Int32",
+          "typeSimple": "number"
+        }
+      ]
+    },
+    "Volo.Abp.Application.Dtos.PagedResultDto<T0>": {
+      "baseType": "Volo.Abp.Application.Dtos.ListResultDto<T>",
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": [
+        "T"
+      ],
+      "properties": [
+        {
+          "name": "TotalCount",
+          "type": "System.Int64",
+          "typeSimple": "number"
+        }
+      ]
+    },
+    "Volo.Abp.Application.Dtos.ListResultDto<T0>": {
+      "baseType": null,
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": [
+        "T"
+      ],
+      "properties": [
+        {
+          "name": "Items",
+          "type": "[T]",
+          "typeSimple": "[T]"
+        }
+      ]
+    },
+    "Volo.Abp.Application.Dtos.FullAuditedEntityDto<T0>": {
+      "baseType": "Volo.Abp.Application.Dtos.AuditedEntityDto<T>",
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": [
+        "T"
+      ],
+      "properties": [
+        {
+          "name": "IsDeleted",
+          "type": "System.Boolean",
+          "typeSimple": "boolean"
+        },
+        {
+          "name": "DeleterId",
+          "type": "T?",
+          "typeSimple": "T?"
+        },
+        {
+          "name": "DeletionTime",
+          "type": "System.DateTime?",
+          "typeSimple": "string?"
+        }
+      ]
+    },
+    "Volo.Abp.Application.Dtos.AuditedEntityDto<T0>": {
+      "baseType": "Volo.Abp.Application.Dtos.CreationAuditedEntityDto<T>",
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": [
+        "T"
+      ],
+      "properties": [
+        {
+          "name": "LastModificationTime",
+          "type": "System.DateTime?",
+          "typeSimple": "string?"
+        },
+        {
+          "name": "LastModifierId",
+          "type": "T?",
+          "typeSimple": "T?"
+        }
+      ]
+    },
+    "Volo.Abp.Application.Dtos.CreationAuditedEntityDto<T0>": {
+      "baseType": "Volo.Abp.Application.Dtos.EntityDto<T>",
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": [
+        "T"
+      ],
+      "properties": [
+        {
+          "name": "CreationTime",
+          "type": "System.DateTime",
+          "typeSimple": "string"
+        },
+        {
+          "name": "CreatorId",
+          "type": "T?",
+          "typeSimple": "T?"
+        }
+      ]
+    },
+    "Volo.Abp.Application.Dtos.EntityDto<T0>": {
+      "baseType": "Volo.Abp.Application.Dtos.EntityDto",
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": [
+        "T"
+      ],
+      "properties": [
+        {
+          "name": "Id",
+          "type": "T",
+          "typeSimple": "T"
+        }
+      ]
+    },
+    "Volo.Abp.Application.Dtos.EntityDto": {
+      "baseType": null,
+      "isEnum": false,
+      "enumNames": null,
+      "enumValues": null,
+      "genericArguments": null,
+      "properties": []
+    }
+  }
+}
