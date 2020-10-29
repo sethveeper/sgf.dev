@@ -25,15 +25,15 @@ Note; this project is specifically using [Abp Commercial](https://commercial.abp
     - Make sure to create a database if you haven't already.
     - If your local database doesn't have a password, leave the password as blank and remove the `;` after the `=`.
 - Set the `ASPNETCORE_ENVIRONMENT` environment variable to `Development`.
-    - If you're using Visual Studio 
+    - If you're using Visual Studio right click on the project to add the variable to (`SgfDevs.Web` and `SgfDevs.DbMigrator`), click Properties, navigate to Debug, and add the variable in the Environment Variables section 
     - If you're using Rider you can edit each project configuration add add the environment variable there.
     - If you're using the dotnet cli on Windows run `set ASPNETCORE_ENVIRONMENT=Development`
         - Note; if you ever close or reset you're terminal you'll have to set the environment variable again.
     - If you're using the dotnet cli on Mac OS/Linux `export ASPNETCORE_ENVIRONMENT=Development`
         - Note; if you ever close or reset you're terminal you'll have to set the environment variable again.
-- Execute the database migrations by running the `SgfDevs.DbMigrator` project. 
-    - If you're using Visual Studio or Rider you should automatically have an option to run this project
-    - If you're using the dotnet cli run `dotnet run` in the `src/SgfDevs.DbMigrator` folder.
+- Set the `ASPNETCORE_URLS` environment variable to `https://localhost:44359`
+    - If you're using the Visual Studio or Rider this only needs set for the `SgfDevs.Web` project.
+- Run migrations (see Running Migration section for instructions).
 - Run `npm i` in `src/SgfDevs.Web/Admin`.
 
 
@@ -48,3 +48,8 @@ Note; this project is specifically using [Abp Commercial](https://commercial.abp
 ### Creating Migrations
 
 - In the `src/SgfDevs,Web` folder run `dotnet ef migrations add MigrationName --project ../SgfDevs.EntityFrameworkCore.DbMigrations/SgfDevs.EntityFrameworkCore.DbMigrations.csproj`.
+
+### Running Migrations
+- To run the database migrations by run the `SgfDevs.DbMigrator` project. 
+    - If you're using Visual Studio or Rider you should automatically have an option to run this project
+    - If you're using the dotnet cli run `dotnet run` in the `src/SgfDevs.DbMigrator` folder.
