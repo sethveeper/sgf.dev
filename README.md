@@ -15,16 +15,16 @@ Note; this project is specifically using [Abp Commercial](https://commercial.abp
 
 ## Setup
 
-- Copy `src/SgfDevs.DbMigrator/appsettings.json.example` to `src/SgfDevs.DbMigrator/appsettings.Development.example`
-- Copy `src/SgfDevs.Web/appsettings.json.example` to `src/SgfDevs.Web/appsettings.Development.example`
-- Copy `test/SgfDevs.HttpAp.Client.ConsoleTestApp/appsettings.json.example` to `test/SgfDevs.HttpAp.Client.ConsoleTestApp/appsettings.Development.example`
-- Copy `test/SgfDevs.TestBase/appsettings.json.example` to `test/SgfDevs.TestBase/appsettings.Development.example` 
+- Copy `src/SgfDevs.DbMigrator/appsettings.json.example` to `src/SgfDevs.DbMigrator/appsettings.Development.example`.
+- Copy `src/SgfDevs.Web/appsettings.json.example` to `src/SgfDevs.Web/appsettings.Development.example`.
+- Copy `test/SgfDevs.HttpAp.Client.ConsoleTestApp/appsettings.json.example` to `test/SgfDevs.HttpAp.Client.ConsoleTestApp/appsettings.Development.example`.
+- Copy `test/SgfDevs.TestBase/appsettings.json.example` to `test/SgfDevs.TestBase/appsettings.Development.example` .
 - Add the abp license code to each `apssetings.Development.json` file you created in the `AbpLicenseCode` property.
-    - If you don't have this code reach out the one of the project maintainers
-- In `src/SgfDevs.Web/appsettings.Development.json` and `src/SgfDevs.DbMigrator/appsettings.Development.json` fill out your database details in the default connection string
-    - Make sure to create a database if you haven't already
-    - If your local database doesn't have a password, leave the password as blank and remove the `;` after the `=`
-- Set the `ASPNETCORE_ENVIRONMENT` environment variable to `Development`
+    - If you don't have this code reach out the one of the project maintainers.
+- In `src/SgfDevs.Web/appsettings.Development.json` and `src/SgfDevs.DbMigrator/appsettings.Development.json` fill out your database details in the default connection string.
+    - Make sure to create a database if you haven't already.
+    - If your local database doesn't have a password, leave the password as blank and remove the `;` after the `=`.
+- Set the `ASPNETCORE_ENVIRONMENT` environment variable to `Development`.
     - If you're using Visual Studio 
     - If you're using Rider you can edit each project configuration add add the environment variable there.
     - If you're using the dotnet cli on Windows run `set ASPNETCORE_ENVIRONMENT=Development`
@@ -33,18 +33,18 @@ Note; this project is specifically using [Abp Commercial](https://commercial.abp
         - Note; if you ever close or reset you're terminal you'll have to set the environment variable again.
 - Execute the database migrations by running the `SgfDevs.DbMigrator` project. 
     - If you're using Visual Studio or Rider you should automatically have an option to run this project
-    - If you're using the dotnet cli run `dotnet run` in the `src/SgfDevs.DbMigrator` folder
-- Run `npm i` in `src/SgfDevs.Web/Admin`
+    - If you're using the dotnet cli run `dotnet run` in the `src/SgfDevs.DbMigrator` folder.
+- Run `npm i` in `src/SgfDevs.Web/Admin`.
 
 
 ## Running
 
-- Run `npm start` in `src/SgfDevs.Web/Admin`
-- Run the `SgfDevs.Web` project
-    - If you're using Visual Studio or Rider you should automatically have an option to run this project
-    - If you're using the dotnet cli run `dotnet run` or `dotnet watch` in the `src/SgfDevs.Web` folder
+- Run `npm start` in `src/SgfDevs.Web/Admin`.
+- Run the `SgfDevs.Web` project.
+    - If you're using Visual Studio or Rider you should automatically have an option to run this project.
+    - If you're using the dotnet cli run `dotnet run` or `dotnet watch` in the `src/SgfDevs.Web` folder.
 
 
 ### Creating Migrations
 
-- In the `src/SgfDevs,Web` folder run `dotnet ef migrations add MigrationName --project ../SgfDevs.EntityFrameworkCore.DbMigrations/SgfDevs.EntityFrameworkCore.DbMigrations.csproj`
+- In the `src/SgfDevs,Web` folder run `dotnet ef migrations add MigrationName --project ../SgfDevs.EntityFrameworkCore.DbMigrations/SgfDevs.EntityFrameworkCore.DbMigrations.csproj`.
