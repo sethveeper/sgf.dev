@@ -25,14 +25,15 @@ Note; this project is specifically using [Abp Commercial](https://commercial.abp
     - Make sure to create a database if you haven't already.
     - If your local database doesn't have a password, leave the password as blank and remove the `;` after the `=`.
 - Set the `ASPNETCORE_ENVIRONMENT` environment variable to `Development`.
-    - If you're using Visual Studio right click on the project to add the variable to (`SgfDevs.Web` and `SgfDevs.DbMigrator`), click Properties, navigate to Debug, and add the variable in the Environment Variables section 
+    - If you're using Visual Studio this should already be set for you. 
     - If you're using Rider you can edit each project configuration add add the environment variable there.
     - If you're using the dotnet cli on Windows run `set ASPNETCORE_ENVIRONMENT=Development`
         - Note; if you ever close or reset you're terminal you'll have to set the environment variable again.
     - If you're using the dotnet cli on Mac OS/Linux `export ASPNETCORE_ENVIRONMENT=Development`
         - Note; if you ever close or reset you're terminal you'll have to set the environment variable again.
 - Set the `ASPNETCORE_URLS` environment variable to `https://localhost:44359`
-    - If you're using the Visual Studio or Rider this only needs set for the `SgfDevs.Web` project.
+    - If you're using Visual Studio this should already be set for you.
+    - If you're using Rider this only needs set for the `SgfDevs.Web` project.
 - Run migrations (see Running Migration section for instructions).
 - Run `npm i` in `src/SgfDevs.Web/Admin`.
 
