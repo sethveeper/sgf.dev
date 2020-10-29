@@ -1,0 +1,6 @@
+{
+    "ConnectionStrings": {
+        "Default": "Database=sgfdevs;Host=localhost;Username=username;Password=password;sslmode=Require"
+    },
+    "AbpLicenseCode": ""
+}

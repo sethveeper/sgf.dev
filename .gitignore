@@ -251,6 +251,11 @@ paket-files/
 .idea/
 *.sln.iml
 
+# OS Files
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini
+
 # SgfDevs
 src/SgfDevs.Web/Logs/*
 src/SgfDevs.IdentityServer/Logs/*
