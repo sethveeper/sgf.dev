@@ -51,6 +51,6 @@ Note; this project is specifically using [Abp Commercial](https://commercial.abp
 - In the `src/SgfDevs,Web` folder run `dotnet ef migrations add MigrationName --project ../SgfDevs.EntityFrameworkCore.DbMigrations/SgfDevs.EntityFrameworkCore.DbMigrations.csproj`.
 
 ### Running Migrations
-- To run the database migrations by run the `SgfDevs.DbMigrator` project. 
+- To run the database migrations run the `SgfDevs.DbMigrator` project. 
     - If you're using Visual Studio or Rider you should automatically have an option to run this project
     - If you're using the dotnet cli run `dotnet run` in the `src/SgfDevs.DbMigrator` folder.
